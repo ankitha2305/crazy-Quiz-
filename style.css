@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+background-color: #e6ece2;
+    margin: 0;
+    
+}
+
+header {
+	text-align: center;
+}
+
+/*--------------------------------------------404 ERROR PAGE*/
+
+#error-body .button-wrapper {
+    margin-top: 15em;
+}
+
+/*--------------------------------------------HOME PAGE*/
+
+#logo-img-container {
+    background-color: #e6ece2;
+    width: 55%;
+    height: 175px;
+    margin: 2em auto 0;
+
+}
+
+#logo-header {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4.5em;
+}
+
+#logo-header h1 {
+    font-size: 3em;
+  padding-top: 1000px;
+}
+
+#menu .button-wrapper {
+    margin-bottom: 2em;
+    line-height:300px;
+   
+}
+
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*--------------------------------------------INSTRUCTIONS PAGE*/
+
+#instructions-header {
+    margin-top: 2em;
+}
+
+#instructions-text {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*--------------------------------------------COMMON SELECTORS*/
+
+h1, #modal-logo {
+    font-family: "Calistoga", sans-serif;
+}
+
+#logo-img, #img, #modal-img {
+    width: 100%;
+    height: 100%;
+}
+
+.button, .screen-btn {
+    color: white;
+    text-decoration: none;
+    font-family: "Caladea", sans-serif;
+    border-radius: 8px;
+    width: 60%;
+    height: 80px;
+    font-size: 1.5em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#instructions-text p, #game-over-screen p {
+    font-family: "Caladea", sans-serif;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    margin-bottom: 2em;
+}
+
+#username-section, #answer-btn-container, #continue-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#username-error-section, #error-response-section {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+    color: red;
+}
+
+#topic-header, #difficulty-header, #game-over-header, #leaderboard-header {
+    height: 5vh;
+    display: none;
+}
+
+#topic-section, #difficulty-section {
+	min-height: 90vh;
+}
+
+#topic-screen, #difficulty-screen, #game-header, #game-screen, #game-over-screen, #leaderboard-screen {
+    display: none;
+}
+
+#game-area, #game-over-section, #leaderboard-section {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#game-over-menu .button-wrapper, #leaderboard-menu .button-wrapper {
+    margin-bottom: 2em;
+}
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #error-body .button-wrapper {
+        margin-top: 15em;
+    }
+    #logo-img-container {
+        width: 20%;
+        margin: 2em auto 0;
+    }
+    #logo-header {
+        margin-bottom: 6em;
+    }
+    #menu .button-wrapper {
+        margin-bottom: 0;
+    }
+    .button {
+        font-size: 2.5em;
+    }
+    #instructions-button {
+        font-size: 2.5em;
+        width: 20%;
+    }
+    #instructions-header h1 {
+        font-size: 3em;
+    }
+    #instructions-text p, #game-over-screen p {
+        font-size: 1.75em;
+    }
+    .screen-btn {
+    	width: 300px;
+    }
+    #username-prompt-section h3 {
+        font-size: 1.75em;
+        margin-bottom: 8em;
+    }
+    #username-prompt-menu .button-wrapper {
+        margin: 2em 0;
+    }
+    #img-container {
+        max-width: 60%;
+        margin: 0 auto;
+        height: 250px;
+    }
+    #game-area, #username-section {
+        max-width: 60%;
+    }
+    .answer-btn {
+        width: 80%;
+        min-height: 80px;
+        font-size: 2em;
+    }
+    .modal-content {
+        margin: 8% auto; /* 10% from the top and centered */
+        width: 70%; /* Could be more or less, depending on screen size */
+        height: 70%;
+    }
+    #modal-img-container {
+        width: 33%;
+        height: 225px;
+    }
+    .modal-body .button {
+        margin: 0.5em auto;
+        width: 80%;
+        text-align: center;
+    }
+    #game-over-header {
+        font-size: 3em;
+    }
+    #game-over-section {
+        margin-bottom: 8em;
+    }
+}
+
+/* // X-Large devices (large desktops, 1280px and up) */
+/* @media (min-width: 1280px) and (min-height: 802px):  { */
+@media (min-width: 1280px) {
+    #menu .button-wrapper {
+        margin-top: 2em;
+    }
+    #game-over-menu .button, #leaderboard-screen .button {
+        width: 75%;
+    }
+    #game-over-screen {
+        min-height: 70vh;
+        grid-template-rows: 1fr auto;
+    }
+
+    #game-over-menu {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #modal-img-container {
+        width: 33%;
+        height: 300px;
+    }
+}
+
+/* // XX-Large devices (larger desktops, 1600px and up) */
+/* @media (min-width: 1600px) and (min-height: 992px){ */
+@media (min-width: 1600px) {
+    #logo-img-container {
+        height: 350px;
+        width: 25%;
+        margin: 8em auto 0;
+    }
+    #logo-header {
+        margin-bottom: 6em;
+    }
+    #logo-header h1 {
+        font-size: 6em;
+    }
+    #menu .button-wrapper {
+        margin-bottom: 0;
+    }
+    #img-container {
+        max-width: 60%;
+        height: 350px;
+    }
+}
