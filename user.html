@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<style>
+body{
+	background-image:url("game.jpeg");
+        background-repeat:no-repeat;
+	background-size:cover;
+      
+}
+</style>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="General Knowledge Quiz Game"/>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+
+    <!-- Adds Bootstrap to the project -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Crazy Quiz- Play</title>
+</head>
+
+<body>
+    <header>
+
+        <h1 id="username-header" class="my-5">Choose Username</h1><!-- Username header --
+
+    </header>
+
+
+    <!-- 1) Enter Username Screen -->
+    <main id="username-screen">
+
+        <!-- Error will appear if invalid username is entered -->
+        <section id="username-error-section">
+            <p id="username-error-response">Template</p>
+        </section>
+
+         <!-- Username input section -->
+        <section id="username-prompt-section">
+            <h3>Continue playing as <span id="session-username">"John Smith"</span>?</h3>
+        </section>
+
+        <!-- Username Prompt -->
+        <section id="username-prompt-menu" class="row m-0">
+
+            <div class="col-12 col-lg-6 button-wrapper">
+                <button class="screen-btn" value="Yes" style="background-color: #00FA9A;">  <a href="cz.html">Yes</a></button>
+            </div>
+
+            <div class="col-12 col-lg-6 button-wrapper">
+                <button class="screen-btn" value="No" style="background-color: #FF5733;">No</button>
+            </div>
+            
+        </section>
+
+        <!-- Username input section -->
+        <section id="username-section">
+
+            <div class="input-group mb-3">
+                
+                <!-- Input box -->
+                <input id="user-input" name="fname" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="username-btn" autofocus>
+
+                <!-- Submit button -->
+                <button class="btn btn-outline-secondary" type="button" id="username-btn">
+            <a href="cz.html">Submit</a></button>
+
+ 
+        
+            </div>
+
+        </section>
+
+    </main>
+
+
+ <!-- Bootstrap JavaScript plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
+
+    <!-- Adds jQuery to project -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+    <!-- Local JavaScript file -->
+    <script src="app.js"></script>
+</body>
+
+</html>
